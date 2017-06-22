@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+         android:title="@string/vidljivost_podataka" >
+
+      <SwitchPreference android:key="sw_notifikacija_ukljucena"
+          android:title="@string/notifikacione_poruke_ukljucene"
+          android:summary="@string/opis_za_notifikaciju"
+          android:defaultValue="true">
+
+      </SwitchPreference>
+         <CheckBoxPreference android:key="chb_toast_ukljucen"
+             android:title="@string/toast_poruka_ukljucena"
+             android:summary="@string/opis_za_toast"
+              android:defaultValue="true"
+             android:checked="true">
+
+         </CheckBoxPreference>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

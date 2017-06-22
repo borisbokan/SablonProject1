@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SablonProject1</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_oaplikaciji">O aplikaciji</string>
+    <string name="osvezi">Osvezi</string>
+    <string name="vidljivost_podataka">Vidljivost podataka</string>
+    <string name="notifikacione_poruke_ukljucene">Notifikacija ukljucena</string>
+    <string name="unos_ispravka_glumca">Unos ispravka</string>
+    <string name="podesavanja">Podesavanja</string>
+    <string name="opis_za_toast">Vidljivost Toast poruke kod brisanja, ispravke i dodavanja glumca</string>
+    <string name="opis_za_notifikaciju">Prikaz Notifikacije pri brisanju, dodavanju ili ispravci glumca</string>
+    <string name="dodaj_glumca">Dodaj glumca</string>
+    <string name="ispravi_glumca">Ispravi glumca</string>
+    <string name="detalji_glumca">Detalji glumca</string>
+    <string name="unos_ispravka_filma">Unos ispravka filma</string>
+    <string name="toast_poruka_ukljucena">Toast poruka ukljucena</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="kateggorija">
+        <item>Kategorija 1</item>
+        <item>Kategorija 2</item>
+        <item>Kategorija 3</item>
+        <item>Kategorija 4</item>
+
+    </array>
+
+</resources>

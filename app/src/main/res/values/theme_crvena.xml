@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MojaTemaCrvena" parent="AppTheme">
+        <item name="colorPrimary">@color/moja_crvena_primary</item>
+        <item name="colorPrimaryDark">@color/moja_crvena_colorPrimaryDark</item>
+        <item name="colorAccent">@color/moja_crvena_colorAccent</item>
+        <item name="android:textColorHint">@color/moja_crvena_hintColor</item>
+        <item name="android:background">@color/moja_crvena_transp30</item>
+        <item name="android:textColor">@color/moja_crvena_textColor</item>
+        <item name="android:listViewStyle">@style/MojaTemaCrvena.lsStavkeNaziv</item>
+        <item name="android:actionOverflowButtonStyle">@color/moja_crvena_colorAccent</item>
+
+    </style>
+
+
+    <style name="MojaTemaCrvena.lsStavkeNaziv" >
+        <item name="android:textColor">@color/moja_crvena_textColor</item>
+        <item name="android:background">@color/moja_crvena_transp30</item>
+
+    </style>
+
+    <style name="MojaTemaCrvena.listaStavki">
+        <item name="android:textColor">@color/lstStavka_crvenatema</item>
+        <item name="android:background">@color/moja_crvena_transp30</item>
+
+    </style>
+
+    <style name="MojaTemaCrvena.StavkeListe">
+        <item name="android:textColor">@color/lstStavka_crvenatema</item>
+        <item name="android:background">@color/moja_crvena_transp50</item>
+    </style>
+
+
+    <style name="MojaTemaCrvena.OpisStavkeListe">
+        <item name="android:textColor">@color/lstopisstavka_crvenatema</item>
+
+    </style>
+
+</resources>

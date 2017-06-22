@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/dodaj_kateggorija"
+        android:title="@string/dodaj_glumca"
+        android:icon="@mipmap/ic_dodaj" app:showAsAction="ifRoom">
+
+    </item>
+
+    <item android:id="@+id/ispravi_stavkka"
+        android:title="@string/ispravi_glumca"
+        android:icon="@mipmap/ic_ispravi" app:showAsAction="ifRoom">
+
+    </item>
+
+    <item android:id="@+id/obrisi_stavkka"
+        android:title="@string/dodaj_glumca"
+        android:icon="@mipmap/ic_obrisi" app:showAsAction="ifRoom">
+
+    </item>
+
+
+</menu>
