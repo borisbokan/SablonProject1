@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceFragment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +26,6 @@ import com.borcha.sablonproject1.myDB.dbmodel.Stavkka;
 import com.borcha.sablonproject1.pomocne.DialogInfo;
 
 import java.util.List;
-import java.util.prefs.Preferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
 
 
         lvStavke=(ListView)findViewById(R.id.lsLista);
@@ -71,23 +69,23 @@ public class MainActivity extends AppCompatActivity {
     private void setujTemuIzSettings() {
         SharedPreferences setings = getPreferences(MODE_PRIVATE);
 
-        int odabrana=Integer.valueOf(setings.getString("listaTema","0"));
+        int odabrana=Integer.valueOf(setings.getString("listaTema","2"));
         Log.i("tema",String.valueOf(odabrana));
 
         switch(odabrana){
             case 0:
-               setTheme(R.style.AppTheme);
+               getApplication().setTheme(R.style.AppTheme);
                 break;
             case 1:
 
                 break;
 
             case 2:
-                setTheme(R.style.MojaTemaCrvena);
+                getApplication().setTheme(R.style.MojaTemaCrvena);
                 break;
 
             case 3:
-                setTheme(R.style.MojaTemaZelena);
+                getApplication().setTheme(R.style.MojaTemaZelena);
                 break;
         }
 

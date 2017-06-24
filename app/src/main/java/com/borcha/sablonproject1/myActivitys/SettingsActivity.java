@@ -3,8 +3,11 @@ package com.borcha.sablonproject1.myActivitys;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.ListPreference;
+import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.borcha.sablonproject1.R;
 
@@ -13,7 +16,7 @@ import com.borcha.sablonproject1.R;
  * Created by androiddevelopment on 16.5.17..
  */
 
-public class SettingsActivity extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class SettingsActivity extends PreferenceActivity  {
 
 
     boolean toastPoruka=true;
@@ -30,15 +33,17 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
          toastPoruka=podesavnja.getBoolean("sw_notifikacija_ukljucena",true);
          notifikacionaPoruka=podesavnja.getBoolean("chb_toast_ukljucen",true);
 
-
-         podesavnja.registerOnSharedPreferenceChangeListener(this);
-
-
+        ListPreference lista=(ListPreference)findPreference("listaTema");
+        lista.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                 int vred=Integer.valueOf(preference.getSharedPreferences().getString("listaTema","0"));
+                setujTemuIzSettings(vred);
+                return false;
+            }
+        });
 
     }
-
-
-
 
 
     public void setNotifikacijaPoruka(boolean ukljuceno) {
@@ -65,44 +70,26 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
     }
 
 
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-
-        if(key.equals("listaTema")){
-            int vred=Integer.valueOf(sharedPreferences.getString("listTema","0"));
-            Log.i("tema",String.valueOf(vred));
-            setujTemuIzSettings(vred);
-        }
-
-
-    }
-
-
     private void setujTemuIzSettings(int _tema) {
 
         switch(_tema){
             case 0:
-                setTheme(R.style.AppTheme);
+                getApplication().setTheme(R.style.AppTheme);
                 break;
             case 1:
-                setTheme(R.style.MojaTemaPlava);
+                getApplication().setTheme(R.style.MojaTemaPlava);
                 break;
 
             case 2:
-                setTheme(R.style.MojaTemaCrvena);
+                getApplication().setTheme(R.style.MojaTemaCrvena);
                 break;
 
             case 3:
-                setTheme(R.style.MojaTemaZelena);
+                getApplication().setTheme(R.style.MojaTemaZelena);
                 break;
         }
 
 
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        podesavnja.unregisterOnSharedPreferenceChangeListener(this);
-    }
 }
