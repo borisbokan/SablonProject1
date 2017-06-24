@@ -28,8 +28,24 @@ public class Kateggorija {
     @ForeignCollectionField(foreignFieldName = "kateggorija",eager = true)
     ForeignCollection<Stavkka> stavkke;
 
-
     public Kateggorija() { }
+    public static String gettKateggorija() {
+        return tKateggorija;
+    }
+
+    public static String gettKateggorija_id() {
+        return tKateggorija_id;
+    }
+
+    public static String gettKateggorija_naziv() {
+        return tKateggorija_naziv;
+    }
+
+    public void setStavkke(ForeignCollection<Stavkka> stavkke) {
+        this.stavkke = stavkke;
+    }
+
+
 
     public Kateggorija(String _naziv) {
         this.naziv = _naziv;
@@ -58,13 +74,11 @@ public class Kateggorija {
         return this.stavkke;
     }
 
-    public void setFilmovi(ForeignCollection<Stavkka> _stavkka) {
-        this.stavkke = _stavkka;
-    }
+
 
 
     public String toString() {
-        return "Kateggorija>> " + id + "-" + naziv;
+        return  id + "-" + naziv;
     }
 
 }

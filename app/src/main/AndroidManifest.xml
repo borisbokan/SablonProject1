@@ -18,6 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".myActivitys.DetaljiStavkka" android:parentActivityName=".myActivitys.MainActivity"/>
+
+
+        <activity android:name=".myActivitys.SettingsActivity" android:parentActivityName=".myActivitys.MainActivity"/>
+
+        <activity android:name=".myActivitys.UnosIspravkaKateggorija" android:parentActivityName=".myActivitys.MainActivity"/>
+
+        <activity android:name=".myActivitys.UnosIspravkaStavkka" android:parentActivityName=".myActivitys.MainActivity"/>
+
     </application>
 
 </manifest>

@@ -14,25 +14,25 @@
     </style>
 
 
-    <style name="MojaTemaPlava.lsStavkeNaziv" >
+    <style name="MojaTemaZelena.lsStavkeNaziv" >
         <item name="android:textColor">@color/moja_zelena_textColor</item>
         <item name="android:background">@color/moja_zelena_transp30</item>
 
     </style>
 
-    <style name="MojaTemaPlava.listaStavki">
+    <style name="MojaTemaZelena.listaStavki">
         <item name="android:textColor">@color/lstStavka_zelenatema</item>
         <item name="android:background">@color/moja_zelena_transp30</item>
 
     </style>
 
-    <style name="MojaTemaPlava.StavkeListe">
+    <style name="MojaTemaZelena.StavkeListe">
         <item name="android:textColor">@color/lstStavka_zelenatema</item>
         <item name="android:background">@color/moja_zelena_transp50</item>
     </style>
 
 
-    <style name="MojaTemaPlava.OpisStavkeListe">
+    <style name="MojaTemaZelena.OpisStavkeListe">
         <item name="android:textColor">@color/lstopisstavka_zelenatema</item>
 
     </style>

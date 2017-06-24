@@ -35,7 +35,7 @@ public class DetaljiStavkka extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.detalji_glumca);
+        setContentView(R.layout.detalji);
         idStavkka=getIntent().getIntExtra("id_stavkka",0);
         getStavkkaPoId(idGlumac);
         //savedInstanceState.putInt("id_glumac",idGlumac);

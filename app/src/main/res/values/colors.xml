@@ -13,14 +13,9 @@
     <color name="moja_plava_hintColor">#dad06d</color>
     <color name="moja_plava_transp30">#30041fb3</color>
     <color name="moja_plava_transp50">#50041fb3</color>
-    <color name="moja_plava_transp60">#60041fb3</color>
-    <color name="moja_plava_transp70">#70041fb3</color>
-    <color name="moja_plava_transp80">#80041fb3</color>
-    <color name="moja_plava_transp90">#90041fb3</color>
 
     <color name="lststavka_plavatema">#b4a202</color>
     <color name="lstopisstavka_plavatema">#d6c639</color>
-    <color name="lstlista_pozadina_plavatema">@color/moja_plava_transp30</color>
 
 
     <!-- Crvena tema-->
@@ -32,15 +27,9 @@
     <color name="moja_crvena_textColor">#ffffff</color>
     <color name="moja_crvena_transp30">#30ca0717</color>
     <color name="moja_crvena_transp50">#50ca0717</color>
-    <color name="moja_crvena_transp60">#60ca0717</color>
-    <color name="moja_crvena_transp70">#70ca0717</color>
-    <color name="moja_crvena_transp80">#80ca0717</color>
-    <color name="moja_crvena_transp90">#90ca0717</color>
 
     <color name="lstStavka_crvenatema">#ffffff</color>
     <color name="lstopisstavka_crvenatema">#cecdc8</color>
-    <color name="lstlista_pozadina_crvenatema">@color/moja_crvena_transp30</color>
-
 
 
     <!-- Zelena tema-->
@@ -53,13 +42,8 @@
     <color name="moja_zelena_textColor">#faf32a</color>
     <color name="moja_zelena_transp30">#30109e06</color>
     <color name="moja_zelena_transp50">#50109e06</color>
-    <color name="moja_zelena_transp60">#60109e06</color>
-    <color name="moja_zelena_transp70">#70109e06</color>
-    <color name="moja_zelena_transp80">#80109e06</color>
-    <color name="moja_zelena_transp90">#90109e06</color>
 
     <color name="lstStavka_zelenatema">#faf32a</color>
     <color name="lstopisstavka_zelenatema">#efd554</color>
-    <color name="lstlista_pozadina_zelenatema">@color/moja_zelena_transp30</color>
 
 </resources>

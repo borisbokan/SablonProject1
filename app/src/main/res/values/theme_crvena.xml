@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MojaTemaCrvena" parent="AppTheme">
+    <style name="MojaTemaCrvena" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/moja_crvena_primary</item>
         <item name="colorPrimaryDark">@color/moja_crvena_colorPrimaryDark</item>
         <item name="colorAccent">@color/moja_crvena_colorAccent</item>

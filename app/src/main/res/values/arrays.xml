@@ -9,4 +9,19 @@
 
     </array>
 
+
+    <string-array name="arlista_tema">
+        <item>Osnovna</item>
+        <item>Plava</item>
+        <item>Crvena</item>
+        <item>Zelena</item>
+
+
+    </string-array>
+    <string-array  name="arlist_biranih_tema" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>

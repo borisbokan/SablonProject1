@@ -19,8 +19,20 @@
 
          </CheckBoxPreference>
 
-
     </PreferenceCategory>
 
+
+    <PreferenceCategory
+
+        android:title="Teme" android:dependency="listaTema">
+
+        <ListPreference
+
+            android:title="Odaberite temu"
+            android:key="listaTema"
+            android:defaultValue="0"
+            android:entries="@array/arlista_tema"
+            android:entryValues="@array/arlist_biranih_tema" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

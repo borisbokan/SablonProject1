@@ -6,18 +6,17 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_oaplikaciji"
         android:title="@string/action_oaplikaciji"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 
 
     <item
-        android:id="@+id/action_osvezi"
         android:title="@string/osvezi"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:icon="@mipmap/ic_osvezi"/>
 
 </menu>
